@@ -2,13 +2,18 @@ import React from 'react'
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 import axios from 'axios';
+import { NavigationContainer } from '@react-navigation/native';
+
 import Login from "./components/login";
+
 
 export default function App() {
   return (
-    <View style={styles.container}>
-        <Login />
-    </View>
+    <NavigationContainer>
+      <View style={styles.container}>
+          <Login />
+      </View>
+    </NavigationContainer>
   );
 }
 
