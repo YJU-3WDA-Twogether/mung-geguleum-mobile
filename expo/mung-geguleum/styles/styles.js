@@ -1,0 +1,83 @@
+import { StyleSheet } from 'react-native';
+
+export default StyleSheet.create({
+    container: {
+        width: '100%',
+        height: '100%',
+        display: 'flex',
+        overflow: 'hidden',
+    },
+    authImage: {
+        width: '50%',
+        height: '100%',
+    },
+    auth: {
+        padding: 150,
+        width: '50%',
+        maxWidth: 760,
+        minWidth: 437,
+        height: '100%',
+        display: 'flex',
+        flexDirection: 'column',
+        paddingTop: 65,
+    },
+    nwitter__logo: {
+        width: 60,
+        height: 60,
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        borderRadius: 50,
+        cursor: 'pointer',
+        transition: 'all 0.3s',
+    },
+    nwitter__notice: {
+        fontSize: 60,
+        lineHeight: 70,
+        wordBreak: 'keep-all',
+        fontWeight: '700',
+        margin: 48,
+    },
+    nwitter__info: {
+        fontSize: 30,
+        fontWeight: '700',
+        marginBottom: 48,
+    },
+    authBtns: {
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'space-between',
+        width: '100%',
+        maxWidth: 400,
+        gap: 12,
+    },
+    authBtn: {
+        borderRadius: 20,
+        border: 'none',
+        padding: 10,
+        fontSize: 12,
+        textAlign: 'center',
+        width: 195,
+        backgroundColor: '#fff',
+        borderWidth: 1,
+        borderColor: '#ebebeb',
+        marginBottom: 48,
+        cursor: 'pointer',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+    },
+    auth__notice: {
+        fontWeight: '700',
+        display: 'flex',
+    },
+    auth__noticeText: {
+        marginRight: 8,
+    },
+    authSwitch: {
+        cursor: 'pointer',
+        color: '#6667ab',
+        textDecorationLine: 'underline',
+        textDecorationStyle: 'under',
+    },
+});

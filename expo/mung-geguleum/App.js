@@ -5,13 +5,15 @@ import axios from 'axios';
 import { NavigationContainer } from '@react-navigation/native';
 
 import Login from "./components/login";
+import Auth from "./components/Auth";
 
 
 export default function App() {
   return (
     <NavigationContainer>
       <View style={styles.container}>
-          <Login />
+          <Auth />
+          <Text>Hello world!</Text>
       </View>
     </NavigationContainer>
   );
