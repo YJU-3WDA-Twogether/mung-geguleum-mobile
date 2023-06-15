@@ -1,0 +1,114 @@
+.close-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: #fff;
+    font-size: 1.8rem;
+    padding: 0.5rem;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.layer-popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(54, 54, 54, 0.1);
+    z-index: 100;
+}
+
+.layer-popup.show {
+    display: block;
+    overflow: hidden;
+}
+
+
+.modal-dialog {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 90%; /* 이 값을 조정하여 최대 크기를 설정하세요 */
+    min-height: 70vh; /* 이 값을 조정하여 최소 높이를 설정하세요 */
+    width: 1200px; /* 모달 대화상자 안에서 최대로 확장 */
+    height: 800px;
+    margin: 40px auto;
+    background-color: #fff;
+}
+
+.modal-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #fff;
+    width: 600px; /* 모달 대화상자 안에서 최대로 확장 */
+    height: 800px;
+    max-height: 100%; /* 모달 대화상자 안에서 최대로 확장 */
+    line-height: 1.5;
+    overflow-y: auto; /* 내용이 많을 경우 스크롤 허용 */
+
+}
+
+body.modal-open {
+    overflow: hidden;
+}
+.fixedUp {
+    display: flex;
+    padding: 10px; /* 내부 간격 설정 */
+    border-bottom: 1px solid #ebebeb;
+}
+.fixedDown {
+    border-top: 1px solid #ebebeb;
+    padding: 20px; /* 내부 간격 설정 */
+}
+
+.scrollable {
+    overflow-y: auto; /* 내용이 넘칠 경우 스크롤 허용 */
+    padding: 30px; /* 내부 간격 설정 */
+}
+
+.app {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.container_reply{
+    display: flex;
+}
+.comment-text {
+    padding-left: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.comment-author {
+    font-weight: bold;
+    color: #1f1e1e;
+    padding-right: 6px;
+}
+
+.comment-content {
+    color: #525252;
+}
+
+.replySmit{
+    color: #515188;
+    transition: all 0.3s;
+    cursor: auto;
+    float: right;
+    padding-right: 30px;
+}
+
+.replySmit:disabled{
+    color: #bcbcf3;
+    transition: all 0.3s;
+    cursor: auto;
+}
+.replyInput{
+    padding-left: 30px;
+    width: 300px;
+}

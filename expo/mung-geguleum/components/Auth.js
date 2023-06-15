@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
-import { View, Image, Text, TouchableOpacity, ScrollView } from 'react-native';
+import {View, Image, Text, TouchableOpacity, ScrollView, SafeAreaView} from 'react-native';
 import styles from '../styles/styles';
 import authlg from "../image/MainLogo.png";
+// ScrollView - 화면전환할 때 네비게이션, 스택 추가로 사용해야함
 
 function Auth({ setUserObj }) {
     const [newAccount, setNewAccount] = useState(true);
@@ -65,5 +66,12 @@ function Auth({ setUserObj }) {
         </ScrollView>
     );
 }
+
+// 위 코드에 대한 스타일 지정하는 샘플 코드 한번 만들어봄
+// const styles = StyleSheet.create({   // StyleSheet.create({...})를 통해 새로운 스타일시트를 선언
+//     block: {
+//         flex: 1,    //flex 1을 설정해주면 위치한 곳의 모든 영역을 차지
+//     }
+// })
 
 export default Auth;

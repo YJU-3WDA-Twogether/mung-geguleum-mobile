@@ -4,7 +4,7 @@ import { StyleSheet, Text, View } from 'react-native';
 import axios from 'axios';
 import { NavigationContainer } from '@react-navigation/native';
 
-import Login from "./components/login";
+// import Login from "./components/login";
 import Auth from "./components/Auth";
 
 
