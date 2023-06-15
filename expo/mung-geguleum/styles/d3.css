@@ -1,0 +1,19 @@
+
+.controls .force {
+  background-color:#eee;
+  border-radius: 3px;
+  padding: 5px;
+  margin: 5px 0;
+}
+
+/* SVG styles */
+.svg {
+  flex-basis: 100%;
+  min-width: 200px;
+}
+.links line {
+  stroke: #aaa;
+}
+.nodes circle {
+  pointer-events: all;
+}
