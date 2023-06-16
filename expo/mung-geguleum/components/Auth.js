@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import {View, Image, Text, TouchableOpacity, ScrollView, SafeAreaView} from 'react-native';
+import {View, Image, Text, TouchableOpacity, ScrollView, SafeAreaView, Button, Alert} from 'react-native';
 import styles from '../styles/styles';
 import authlg from "../image/MainLogo.png";
 // ScrollView - 화면전환할 때 네비게이션, 스택 추가로 사용해야함
@@ -22,7 +22,11 @@ function Auth({ setUserObj }) {
                 </View>
                 {newAccount ? (
                     <View style={styles.nwitter__info}>
-                        <Text>9Room 로그인하기</Text>
+                        <Button
+                            title={"9Room 로그인하기"}
+                            color={"#6667ab"}
+                            onPress={() => Alert.alert("로그인 버튼 눌림")}
+                        />
                     </View>
                 ) : (
                     <View style={styles.nwitter__info}>

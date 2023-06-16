@@ -4,15 +4,15 @@ import { StyleSheet, Text, View } from 'react-native';
 import axios from 'axios';
 import { NavigationContainer } from '@react-navigation/native';
 
-// import Login from "./components/login";
-import Auth from "./components/Auth";
+// import Auth from "./components/Auth";
+import AxiosTest from "./components/AxiosTest";
 
 
 export default function App() {
   return (
     <NavigationContainer>
       <View style={styles.container}>
-          <Auth />
+          <AxiosTest />
           <Text>Hello world!</Text>
       </View>
     </NavigationContainer>
